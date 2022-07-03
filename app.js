@@ -14,6 +14,11 @@ app.get("/number/:num", (req, res) => {
     res.send('The number 2 is prime')
   }
 
+  if (number == 0)
+  {
+    res.send('The number 0 is neither prime nor composite')
+  }
+
   if (number == 2)
   {
     res.send('The number 2 is prime')
